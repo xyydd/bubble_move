@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>qipao</title>
+  <script src="qipao.js"></script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    .main {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      background: #fff;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+  </div>
+  <script>
+    window.onload = function () {
+      let dom = document.querySelector('.main')
+      let qp = new Bubble(dom)
+    }
+  </script>
+</body>
+</html>
