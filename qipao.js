@@ -14,7 +14,7 @@ class Bubble {
       let pDom = document.createElement('div')
       pDom.setAttribute('id', i)
       pDom.className = 'bubble'
-      this.paoId.push(i)
+      this.paoId.push({ id: i, timer: 0, movex: 0, movey: 0})
       this.dom.appendChild(pDom)
     }
   }
@@ -26,7 +26,9 @@ class Bubble {
     document.head.appendChild(s)
   }
   // 移动
-  move () {
+  move (bub) {
+    bub.timer = setInterval(() => {
 
+    })
   }
 }
